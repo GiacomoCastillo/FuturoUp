@@ -1,0 +1,76 @@
+<div class="container h-50">
+    <div class="row h-100">
+        <div class="col-12 text-center my-5 py-5 d-flex flex-column justify-content-center align-items-center">
+            <label class="fs-2 fw-bold px-4 colsec lh-i d-block"><b >{{"Tu futuro es nuestra prioridad" | uppercase}}</b></label>
+            <label class="fs-2 px-4 lh-i d-block">Potencia tus habilidades y maximiza tu éxito</label>                        
+        </div>
+    </div>    
+</div>
+<div class="container my-5">
+    
+    <div class="row text-center my-4">
+        <label class="fs-2 fw-bold px-4 colsec lh-i d-block"><b >{{"Nuestro Proceso" | uppercase}}</b></label>
+    </div>
+    
+    <div class="row justify-content-center">
+        <div class="col-md-5 col-lg-5 mb-4">
+            <div class="p-3 border rounded shadow-sm">
+                <img [src]="i_asesora" alt="Asesórate" class="mb-2 icon">
+                <h5 class="fw-bold">ASESÓRATE</h5>
+                <p>Agenda una cita, déjanos tus datos y te contactaremos.</p>
+            </div>
+        </div>
+
+        <div class="col-md-5 col-lg-5 mb-4">
+            <div class="p-3 border rounded shadow-sm">
+                <img [src]="i_elige" alt="Elige" class="mb-2 icon">
+                <h5 class="fw-bold">ELIGE</h5>
+                <p>Agenda una cita, déjanos tus datos y te contactaremos.</p>
+            </div>
+        </div>
+
+        <div class="col-md-5 col-lg-5 mb-4">
+            <div class="p-3 border rounded shadow-sm">
+                <img [src]="i_preparate" alt="Prepárate" class="mb-2 icon">
+                <h5 class="fw-bold">PREPÁRATE</h5>
+                <p>Agenda una cita, déjanos tus datos y te contactaremos.</p>
+            </div>
+        </div>
+
+        <div class="col-md-5 col-lg-5 mb-4">
+            <div class="p-3 border rounded shadow-sm">
+                <img [src]="i_aprende" alt="Aprende" class="mb-2 icon">
+                <h5 class="fw-bold">APRENDE</h5>
+                <p>Agenda una cita, déjanos tus datos y te contactaremos.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-4">
+        <button class="btn btn-secondary px-4 py-2">Conoce más</button>
+    </div>
+
+</div>
+
+<div class="container my-5 pt-5">
+    
+    <div class="row text-center my-5">
+        <label class="fs-2 fw-bold px-4 colsec lh-i d-block"><b >{{"Nuestro Equipo" | uppercase}}</b></label>
+    </div>
+
+    <div class="row justify-content-center">
+        <div 
+            class="col-md-6 col-lg-4 col-xl-4 text-center mb-4" 
+            *ngFor="let miembro of equipo">
+            <img [src]="miembro.foto" 
+                 [alt]="miembro.nombre" 
+                 class="rounded-circle img-fluid mb-2" 
+                 style="width: 120px; height: 120px; object-fit: cover;">
+            <h6 class="fw-bold">{{ miembro.nombre }}</h6>
+            <p>{{ miembro.titulo }}</p>
+            <p class="text-muted">{{ miembro.descripcion }}</p>
+        </div>
+    </div>
+
+
+</div>

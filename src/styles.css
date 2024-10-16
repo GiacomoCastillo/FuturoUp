@@ -1,1 +1,139 @@
-/* You can add global styles to this file, and also import other style files */
+/* Importación de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Configuración de line-height */
+.lh-i {
+    line-height: initial !important;
+}
+
+/* Estilos para imágenes */
+img {
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para tarjetas de servicio */
+.service-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+/* Colores personalizados */
+.colsec {
+    color: #e2611c;
+}
+.colbtnsec {
+    background-color: #174479 !important;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.border {
+    border: 1px solid #e0e0e0;
+}
+
+.shadow-sm {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.colbtnprimary {
+    background-color: #174479 !important;
+}
+
+/* Fuentes globales */
+span, label, p, input, select, textarea, a, small, table, th, td, button {
+    font-family: "Montserrat", sans-serif !important;
+}
+
+.mat-card, .mat-button, .mat-menu, .mat-toolbar, mat-hint, .matStepLabel, mat-error, mat-cell, mat-header-cell, mat-label {
+    font-family: "Montserrat", sans-serif !important;
+}
+
+/* Configuración del contenedor principal */
+.sidenav-container {
+    height: 100vh;
+    display: flex;
+    overflow: hidden; /* Evita el doble scroll */
+}
+
+/* Sidenav ajustado para móviles */
+.sidenav {
+    width: 250px;
+    background-color: #fff;
+}
+
+/* Elementos del menú */
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.menu-items button {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+}
+
+/* Estilo para la barra superior (toolbar) */
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+/* Contenedor del logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Contenido */
+.content {
+    height: calc(100vh - 64px); /* Resta la altura del toolbar */
+    overflow-y: auto; /* Scroll solo en el contenido */
+    padding: 16px;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .sidenav {
+        width: 100%;
+    }
+
+    .menu-items button {
+        font-size: 16px;
+    }
+}
+
+/* Estilos globales para evitar problemas de scroll */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    overflow: hidden; /* Evita scroll en el body */
+}
